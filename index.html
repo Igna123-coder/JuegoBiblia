@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibliaDuo - Reina Valera 1960</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra superior de estado -->
+    <header class="top-bar">
+        <div class="stat"><span id="lives-display">❤️❤️❤️❤️❤️</span></div>
+        <div class="stat">⭐ <span id="xp-display">0</span> XP</div>
+    </header>
+
+    <!-- Pantalla 1: Mapa de Niveles -->
+    <main id="map-screen" class="screen active">
+        <h1>Génesis</h1>
+        <div id="levels-container">
+            <!-- Los niveles se generan desde JavaScript -->
+        </div>
+    </main>
+
+    <!-- Pantalla 2: Zona de Quiz -->
+    <main id="quiz-screen" class="screen">
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <h2 id="question-text">Pregunta</h2>
+        <div id="options-container">
+            <!-- Las opciones se generan aquí -->
+        </div>
+        <div class="action-footer">
+            <button id="check-btn" disabled>Comprobar</button>
+        </div>
+    </main>
+
+    <!-- Pantalla 3: Resultado de la lección -->
+    <main id="result-screen" class="screen">
+        <h1 id="result-title">¡Lección Completada!</h1>
+        <p>Has ganado <span id="earned-xp">0</span> XP.</p>
+        <button id="continue-btn">Continuar</button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
